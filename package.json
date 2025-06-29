@@ -1,0 +1,31 @@
+{
+  "name": "ertu-bots",
+  "homepage": "ertu.live",
+  "version": "1.0.0",
+  "author": "ertucuk",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@discordjs/voice": "^0.17.0",
+    "@napi-rs/canvas": "^0.1.55",
+    "axios": "^1.7.7",
+    "canvas-constructor": "^7.0.1",
+    "chalk": "^4.1.2",
+    "chartjs-node-canvas": "^4.1.6",
+    "child_process": "^1.0.2",
+    "chokidar": "^4.0.1",
+    "cron": "^4.3.1",
+    "discord.js": "^14.19.3",
+    "fs": "^0.0.2",
+    "moment": "^2.29.4",
+    "mongoose": "^8.7.2",
+    "node-cron": "^4.1.0",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "puppeteer": "^24.6.1",
+    "skia-canvas": "^2.0.2",
+    "table": "^6.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

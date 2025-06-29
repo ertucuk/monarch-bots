@@ -1,0 +1,78 @@
+{
+    "Systems": [
+        { "name": "İstila Sistemi", "value": "invasion", "description": "İstila sistemini açar kapatırsınız.", "type": "boolean", "mainPage": true, "root": "systems" },
+        { "name": "Kayıt Sistemi", "value": "register", "description": "Kayıt sistemini açar kapatırsınız.", "type": "boolean", "mainPage": true, "root": "systems" },
+        { "name": "İsim Sistemi", "value": "needName", "description": "İsim gerekliliğini açar kapatırsınız.", "type": "boolean", "mainPage": true, "root": "systems" },
+        { "name": "Yaş Sistemi", "value": "needAge", "description": "Yaş gerekliliğini açar kapatırsınız.", "type": "boolean", "mainPage": true, "root": "systems" },
+        { "name": "İltifat Sistemi", "value": "compliment", "description": "İltifat sistemini açar kapatırsınız.", "type": "boolean", "mainPage": true, "root": "systems" },
+        { "name": "Oto Register Sistemi", "value": "autoRegister", "description": "Sunucudaki oto registeri açıp kapatırsınız.", "type": "boolean", "mainPage": true, "root": "systems" }
+    ],   
+    
+    "General": [
+        { "name": "Tag", "value": "tag", "description": "Sunucudaki tagını ayarlarsınız.", "type": "string", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "İkinci Tag", "value": "secondTag", "description": "Sunucudaki ikinci tagı ayarlarsınız.", "type": "string", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Yasaklı Taglar", "value": "bannedTags", "description": "Sunucudaki yasaklı tagları ayarlarsınız.", "type": "string", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Minimum Yaş", "value": "minAge", "description": "Sunucudaki minimum yaşını ayarlarsınız.", "type": "string", "isNumber": true, "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Welcome Name", "value": "name", "description": "Giren kişilerde olacak isim.", "type": "string", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Görev Sistemi", "value": "staffRanks", "description": "Sunucu moderasyon ekibi için görev yetki seviyelerini tanımlar.", "type": "staff", "mainPage": true, "root": "settings" }
+    ],    
+
+    "Channels": [
+        { "name": "Chat Kanalı", "value": "chatChannel", "description": "Chat kanalını ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": false, "isVoice": false },
+        { "name": "Bot Komut Kanalları", "value": "botCommandChannels", "description": "Bot komut kanallarını ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": true, "isParent": false, "isVoice": false },
+        { "name": "Kayıt Kanalı", "value": "registerChannel", "description": "Kayıt kanalını ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": false, "isVoice": false },
+        { "name": "Davetçi Kanalı", "value": "inviteChannel", "description": "Davet kanalını ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": false, "isVoice": false },
+        { "name": "Özel Oda Kanalı (Ses)", "value": "privateRoomChannel", "description": "Özel Oda kanalını ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": false, "isVoice": true },
+        { "name": "Yetkili Chat Kanalı", "value": "staffChat", "description": "Yetkili Chat kanalını ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": false, "isVoice": false },
+        { "name": "Reklam Kanalları", "value": "mentionChannels", "description": "Sunucuya girince etiket atacağı kanalları ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": true, "isParent": false, "isVoice": false },
+        { "name": "Kayıt Kategorisi", "value": "registerParent", "description": "Kayıt kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true },
+        { "name": "Toplantı Kategorisi", "value": "meetingParent", "description": "Toplantı kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true },
+        { "name": "Sorun Çözme Kategorisi", "value": "problemSolveParent", "description": "Sorun Çözme kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true },
+        { "name": "Streamer Kategorisi", "value": "streamerParent", "description": "Streamer kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true },
+        { "name": "Public Kategorisi", "value": "publicParent", "description": "Public kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true },
+        { "name": "Özel Oda Kategorisi", "value": "customRoomParent", "description": "Özel Oda kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true },
+        { "name": "Loca Kategorisi", "value": "locaParent", "description": "Loca kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true },
+        { "name": "Secret Kategorisi", "value": "privateRoomParent", "description": "Secret kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true },
+        { "name": "Eğlence Kategorisi", "value": "activityParent", "description": "Eğlence kategorisini ayarlarsınız.", "type": "channel", "mainPage": true, "root": "settings", "isMultiple": false, "isParent": true }
+    ],  
+
+    "Roles": [
+        { "name": "Minimum Yetkili Rolü", "value": "minStaffRole", "description": "Minimum yetkili rolünü ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Taşıma Yetkilileri", "value": "moveAuth", "description": "Ses taşıma yetkililerini ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Kurucu Rolleri", "value": "founders", "description": "Kurucu rollerini ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Yetkili Rolleri", "value": "staffs", "description": "Tüm yetkili rollerini ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Sorun Çözme Yetkilileri", "value": "solvingStaffs", "description": "Sorun Çözme rolleri ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Yetki Yükseltme Yetkilileri", "value": "staffUpdateAuth", "description": "Yetki yükseltme yetkililerini ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Sorumluluk Rolleri", "value": "staffResponsibilities", "description": "Sorumluluk rollerini ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Kayıt Yetkilileri", "value": "registerStaffs", "description": "Kayıt yetkilisi rolleri ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Kayıtsız Rolleri", "value": "unregisterRoles", "description": "Kayıtsız rolleri ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Erkek Rolleri", "value": "manRoles", "description": "Erkek rolleri ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Kadın Rolleri", "value": "womanRoles", "description": "Kadın rolleri ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": true },
+        { "name": "Katıldı Rolü", "value": "meetingRole", "description": "Katıldı rolü ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Vip Rolü", "value": "vipRole", "description": "Vip rolü ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Streamer Rolü", "value": "streamerRole", "description": "Streamer rolü ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Cam Rolü", "value": "camRole", "description": "Cam (Kamera) rolü ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Taglı Rolü", "value": "familyRole", "description": "Taglı rolü ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": false },
+        { "name": "Cash Rolü", "value": "richRole", "description": "Cash rolü ayarlarsınız.", "type": "role", "mainPage": true, "root": "settings", "isMultiple": false }
+    ],    
+
+    "Moderation": [
+        { "name": "Karantina Rolü", "value": "quarantineRole", "description": "Karantina rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Chat Mute Rolü", "value": "chatMuteRole", "description": "Chat Mute rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Voice Mute Rolü", "value": "voiceMuteRole", "description": "Voice Mute rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Underworld Rolü", "value": "underworldRole", "description": "Underworld rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Şüpheli Rolü", "value": "suspectedRole", "description": "Şüpheli rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Reklam Rolü", "value": "adsRole", "description": "Reklam rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Streamer Ceza Rolü", "value": "streamerPenaltyRole", "description": "Streamer Ceza rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Public Ceza Rolü", "value": "publicPenaltyRole", "description": "Public Ceza rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Event Ceza Rolü", "value": "eventPenaltyRole", "description": "Event Ceza rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false },
+        { "name": "Yasaklı Tag Rolü", "value": "bannedTagRole", "description": "Yasaklı tag rolü ayarlarsınız.", "type": "role", "mainPage": false, "root": "settings", "isMultiple": false }
+    ],    
+
+    "Limit": [
+        { "name": "Kayıtsız Limit", "value": "unregistered", "description": "Sunucudaki kayıtsız limitini ayarlarsınız.", "type": "limit", "mainPage": false, "root": "settings" },
+        { "name": "Mute Limit", "value": "mute", "description": "Sunucudaki mute limitini ayarlarsınız.", "type": "limit", "mainPage": false, "root": "settings" },
+        { "name": "Karantina Limit", "value": "jail", "description": "Sunucudaki karantina limitini ayarlarsınız.", "type": "limit", "mainPage": false, "root": "settings" },
+        { "name": "Ban Limit", "value": "ban", "description": "Sunucudaki ban limitini ayarlarsınız.", "type": "limit", "mainPage": false, "root": "settings" }
+    ]    
+}
